@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umrzoq Yo'ldoshov</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/84076286e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#">
+                    <img src="./img/logoi.png" class="logo" alt="">
+                </a>
+                <ul id="sidemenu">
+                    <i class="fas fa-times" onclick="closeMenu()"></i> 
+                </ul>
+                <div class="d-center">
+                    <div onclick="setDarkMode()" class="theme-container shadow-dark">
+                        <img id="theme-icon"    src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg" alt="ERR">
+                    </div>
+                    <select onclick="setLang(this.value)">
+                        <option value="uz">UZ</option>
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </div>
+                <i class="fas fa-bars fa-menu" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p id="technology">Frontend dasturchi</p>
+                <h1><b id="hello">Salom, Men</b> <span id="name">Umrzoq</span> <br> <b id="location">O'zbekistonlikman</b></h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------about -------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 user-img">
+                    <img src="./img/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" id="about-title">Men haqimda</h1>
+                    <p id="about-text">Men Yo‘ldoshov Umrzoq 2002 yilda Samarqand viloyati Ishtixon tumanida tug‘ilganman. 2009-2020 yillarda I
+                        Ishtxon tumanidagi 51-maktabni tamomlagan. Hozirda 3-kurs talabasiman
+                        Toshkent axborot texnologiyalari universiteti. 2022-yil dekabr oyida men Frontend kursini tamomladim
+                        GITA Developer Akademiyasida.</p>
+                    <div class="tab-titles" id="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Ko'nikmalar
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Tajriba
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            Ta'lim
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span> <br> Web/App interfaces</li>
+                            <li>Html</li>
+                            <li>Gulp Pug</li>
+                            <li>Css (Scss, Less), Bootstrap</li>
+                            <li>Javascript</li>
+                            <li>Vue js, React js, Next js</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>• I have experience in Html, css and Javascript (React, Vue).</li>
+                            <li>• I can implement user-responsive and effective solutions.</li>
+                            <li>• I am able to implement sustainable web architecture.</li>
+                            <li>• I have excellent problem solving skills and I work well in a team</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>School</span> <br> School 51 of Samarkand region</li>
+                            <li><span>Unversity</span> <br> Tashkent university of information technologies</li>
+                            <li><span>Academy</span> <br>GITA Academy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <div class="sub-title" id="sub-title">
+                Xizmatlar
+            </div>
+            <div class="services-list" id="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>
+                        Frontend dasturchi
+                    </h2>
+                    <p class="mb-3">
+                        Men turli veb-ilovalarning front qismini yarataman. Men onlayn do'konning old qismini, Kredit tizimi, Ta'lim tizimi va boshqa turdagi veb-saytlarni yarataman
+                    </p>
+                    <a href="#">Batafsil</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>
+                        React dasturchi
+                    </h2>
+                    <p class="mb-3">
+                        Men React js-da kuchli tajribaga egaman, men react js-da veb-saytlarni tez va samarali yozaman. Ko'p sahifali saytlarni javascriptdan ko'ra react yoki vue formatida yaratishni tavsiya etaman.
+                    </p>
+                    <a href="#">Batafsil</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-vuejs"></i>
+                    <h2>
+                        Vue developer
+                    </h2>
+                    <p class="mb-3">
+                        Men Vue js-da kuchli tajribaga egaman, men vue js-da veb-saytlarni tez va samarali yozaman. Ko'p sahifali saytlarni javascriptdan ko'ra react yoki vue formatida yaratishni tavsiya etaman.
+                    </p>
+                    <a href="#">Batafsil</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title" id="work-title">Portfolio</div>
+            <div class="work-list" id="work-list">
+                <div class="work">
+                    <img src="./img/fud.jpg" alt="">
+                    <div class="layer">
+                        <h3>Pentagol ilovasi</h3>
+                        <p>Men bu loyihani Reactjs-da Najot ta'limi bo'yicha musobaqa bo'lganida jamoa bilan amalga oshirdim. Bu loyiha menga jamoa bilan ishlash va git bo'yicha bilimimni oshirish imkonini berdi. Keyinchalik men bu loyihani Vue js da yozdim, uni o'zim ham vue da yozdim va Vue js haqidagi bilimimni oshirdim. Men backendga yuborish kabi vazifalarni bajardim.</p>
+                        <a href="https://t.me/front_umrzoq">
+                            <i class="fas fa-external-link-alt">
+
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Nisa ilovasi</h3>
+                        <p>Men ushbu loyihada React js haqidagi bilimimni oshirdim. Ushbu loyihada men formadagi ma'lumotlarni elektron pochtaga yubordim. Ushbu loyihada men Scss, Bootstrap bilan ishladim. Men fayl tuzilishini yanada yashirishni va qisqa kod yozishni o'rgandim.</p>
+                        <a href="https://nisa-app.netlify.app/">
+                            <i class="fas fa-external-link-alt">
+
+                            </i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Newbozor.uz</h3>
+                        <p>Ushbu loyiha davomida men cookie-fayllar bilan ishlashni xohlayman va ularning ma'lum bir qismini, ya'ni keyinroq qo'shilganlarini ko'rsatish uchun backendga juda ko'p ma'lumotlar kelganda va agar foydalanuvchi ularning barchasini olib tashlamoqchi bo'lsa, men element qachon so'radim. massivda keladi .Shuningdek, Splidejs yordamida ID dan maʼlumotlarni olish, savat boʻlimiga qoʻshish, men mahsulotlarni qanday filtrlash va koʻrsatishni oʻrgandim. Kategoriya bo'limida mahsulotlarni saralash va mahsulotga sharh yozish kabi bo'limlarni yaratdim.</p>
+                        <a href="https://newbozor.uz">
+                            <i class="fas fa-external-link-alt">
+
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://t.me/front_umrzoq" class="btn" id="btnMore">Batafsil</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title" id="contact-title">Aloqa</h1>
+                    <p id="mail"> <i class="fas fa-paper-plane"></i> umrzoqdev@gmail.com</p>
+                    <a id="phone" href="tel:+998938623880"> <i class="fas fa-phone-square-alt"></i> +998 93 862 38 80</a>
+                    <p>
+                        <a id="phonetg" href="https://t.me/front_umrzoq" id="telegram-text"><i class="fa-brands fa-telegram"></i>Telegram</a>
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100082742576081">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/YuldoshovUmrzoq">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/yuldoshev.2002">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/umrzoq-yo%E2%80%98ldoshov-65a150265/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yoldoshov2002">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <a href="./img/my-cv.pdf" target="_blank" download class="btn btn2" id="btn2">CVni yuklash</a>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form" action="https://formspree.io/f/xnqyrnqv" method="POST">
+                        <input type="text" class="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" class="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" class="msg" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" id="sub">Yuborish</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Umrzoq.</p>
+        </div>
+    </div>
+    <script>
+        let tablinks = document.getElementsByClassName('tab-links')
+        let tabcontents = document.getElementsByClassName('tab-contents')
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+    </script>
+
+
+    <script>
+        let sidemenu = document.getElementById('sidemenu')
+
+        function openMenu() {
+            sidemenu.style.left = '0';
+        }
+        function closeMenu() {
+            sidemenu.style.left = '-200px';
+        }
+    </script>
+
+
+    <script src="./app.js"></script>
+    <script src="./data.js"></script>
+</body>
+
+</html>
